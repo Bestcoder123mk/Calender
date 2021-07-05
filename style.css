@@ -1,0 +1,45 @@
+body{width:100%;height:700px;}
+#space{width:400px;margin:auto;margin-top:100px;font-family: 'Roboto', sans-serif;}
+.nopaddingnomargin{margin:0;padding:0}
+#calender{background:#303f9f;min-height:400px;width:100%;}
+#header{width:90%;margin-left:5%;height:30px;color:white;padding-top:20px;}
+#header i {width:13%;}
+#header p{width:60%;}
+#header i, #header p{float:left;height:100%;font-size:18px;}
+ul{list-style:none;}
+#dates {margin-top:20px;min-height:400px;}
+#dates > div{width:14%;float:left;}
+#dates > div ul{min-height:300px;width:100%;}
+#dates p{text-align:center;color:rgba(189, 195, 199,0.6)}
+#dates > div > ul > li{margin-top:15%;text-align:center;color:white;width:50px;height:40px;cursor:pointer;border-radius:50%;padding-top:20px;}
+#dates li:hover{animation-name:circle;animation-duration:4s;}
+.today{color:#e91e63 !important;}
+
+
+#taskList{width:100%;min-height:110px;background:rgba(236, 240, 241,1.0);}
+#taskheader{color:#7f8c8d;font-size:20px;padding-top:10px;width:90%;margin-left:5%;}
+#taskheader input{border:none;height:30px;width:70%;}
+#taskList button{width:60px;height:30px;border:none;background:#f8bbd0;}
+#taskList ul{margin:0;padding:0;margin-top:20px;color:#9e9e9e;font-size:15px;}
+#taskList li{min-height:50px;width:100%;background:#eeeeee;color:black;margin-top:5px;}
+#taskList > p {width:100%;padding:0;margin:0;margin-left:5%;}
+.delete, .update {width:20%;text-align:center;padding-top:25px;height:25px;display:inline-block;}
+#taskList p{display:inline-block;float:left;height:50px;}
+
+#taskList li > p{width:50%;margin-left:5%;}
+#taskList li > div > input {background:rgba(241, 196, 15,0.2);width:70%;height:50px;border:none;text-align:center;display:inline-block;}
+#taskList li > div > button {width:29%;border:none;background:white;color:gold;height:50px;display:inline-block;}
+.delete{background: #e91e63;}
+.update{background:white;}
+@keyframes circle{
+  from{background:rgba(189, 195, 199,0.2)}
+  to{white;color:black;background:white;}
+}
+
+
+/**************TRANSITION **/
+.slideoff-leave.slideoff-leave-active{
+  opacity:0.01;
+  margin-left:-90%;
+  transition:all 2s ease-in;
+}
